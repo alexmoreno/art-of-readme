@@ -1,59 +1,38 @@
-# Art of README
+# A Arte do Readme
 
-## Etymology
+## Etimologia
 
-Where does the term "README" come from?
+De onde vem o termo "README"?
 
-The nomenclature dates back to *at least* the 1970s [and the
-PDP-10](http://pdp-10.trailing-edge.com/decuslib10-04/01/43,50322/read.me.html),
-though it may even harken back to the days of informative paper notes placed atop
-stacks of punchcards, "READ ME!" scrawled upon them, describing their use.
+A nomenclatura existe desde *pelo menos* a década de 70 [e o PDP-10](http://pdp-10.trailing-edge.com/decuslib10-04/01/43,50322/read.me.html), embora possa ser ouvido desde o tempo dos papeizinhos informativos colocados no topo das pilhas de cartões perfurados, rabiscado "READ ME" neles, descrevendo o seu uso.
 
-A reader<sup>[1](#footnote-1)</sup> suggested that the title README may be a playful nudge toward Lewis
-Carroll's *Alice's Adventures in Wonderland*, which features a potion and a cake
-labelled *"DRINK ME"* and *"EAT ME"* respectively.
+Um leitor<sup>[1](#footnote-1)</sup> sugeriu que o título README possa ser uma referência ao Alice no País das Maravilhas, de Lewis Carroll, onde existe uma poção e um bolo escrito *"DRINK ME"* e *"EATME"* respectivamente.
 
-The pattern of README appearing in all-caps is a consistent facet throughout
-history. In addition to the visual strikingness of using all-caps, UNIX systems
-would sort capitals before lower case letters, conveniently putting the README
-before the rest of the directory's content<sup>[2](#footnote-2)</sup>.
+O padrão do README aparecer todo em maiúsculo é uma faceta consistente ao longo da história. Além do impacto visual de usar tudo em caps, sistemas UNIX organizam letras maiúsculas antes de minúsculas, colocando convenientemente o README antes de todo o resto do conteúdo do diretório<sup>[2](#footnote-2)</sup>.
 
-The intent is clear: *"this is important information for the user to read before
-proceeding"*. Let's explore together what constitutes "important information" in
-this modern age.
+O intuito é claro: *"informação importante para o usuário ler antes de prosseguir"*. Vamos explorar juntos o que constitui uma "informação importante" nos tempos modernos.
 
 
-## For creators, for consumers
-
-This is an article about READMEs. About what they do, why they are an absolute
-necessity, and how to craft them well.
-
-This is written for module creators, for as a builder of modules, your job is to
-create something that will last. This is an inherent motivation, even if the
-author has no intent of sharing their work. Once 6 months pass, a module without
-documentation begins to look new and unfamiliar.
-
-This is also written for module consumers, for every module author is also a
-module consumer. Node has a very healthy degree of interdependency: no one lives
-at the bottom of the dependency tree.
-
-Despite being focused on Node, the author contends that its lessons apply
-well to other programming ecosystems as well.
 
 
-## Many modules: some good, some bad
+## Para criadores, para consumidores
 
-The Node ecosystem is powered by its modules. [npm](https://npmjs.org) is the
-magic that makes it all *go*. In the course of a week, Node developers evaluate
-dozens of modules for inclusion in their projects. This is a great deal of power
-being churned out in a daily basis, ripe for the plucking, just as fast as one
-can write `npm install`.
+Isso é um artigo sobre READMEs. Sobre o que eles fazem, por que eles são absolutamente necessários, e como fazê-los direito.
 
-Like any ecosystem that is extremely accessible, the quality bar varies. npm
-does its best to nicely pack away all of these modules and ship them far and
-wide. However, the tools found are widely varied: some are shining and new,
-others broken and rusty, and still others are somewhere in between. There are
-even some that we don't know what they do!
+Esse artigo é escrito para criadores de moódulos, e como um construtor de módulos, seu trabalho é criar algo que dure. Isso é uma motivação inerente, mesmo que o autor não tenha intenção de compartilhar seu trabalho. Depois de 6 meses, um'módulo sem documentação começa a parecer novo e não-familiar.
+
+Também é um artigo escrito para consumidores de módulos, pois cada autor de módulos também é um consumidor de módulos. Node tem um grau muito saudável de interdependência: ninguém vive no fundo da árvore da dependência.
+
+Apesar de ser focado em Node, o autor luta para que suas lições sejam aplicadas direito em outros ecossistemas de programação também.
+
+
+## Muitos módulos: alguns bons, outros ruins
+
+O ecossistema do Node é fortalecido pelos seus módulos. npm é a mágica que faz tudo isso funcionar. Num período de uma semana, desenvolvedores Node avaliam dúzias de módulos para inclusão em seus proejtos. Isso é uma quantidade imensa de poder sendo usada numa frequência diária, jogada para amadurecimento, tão rápido quanto alguém pode digitar `npm install`.
+
+Assim como qualquer ecossistema que é extremamente acessível, o gradiente de qualidade é bem grande. npm faz o seu melhor para organizar bem todos os módulos e entregá-los o mais distante possível. Entretanto, as ferramentas achadas lá variam bastante: algumas são novinhas e brilhantes, outras são velhas e todas enferrujadas, e outras estão ali no meio termo. Há até umas que a gente nem faz idéia do que elas fazem!
+
+Para módulos, isso pode tomar forma em 
 
 For modules, this can take the form of inaccurate or unhelpful names (any
 guesses what the `fudge` module does?), no documentation, no tests, no source
